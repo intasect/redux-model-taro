@@ -1,0 +1,56 @@
+{
+  "name": "@redux-model/taro",
+  "version": "9.0.2",
+  "keywords": [
+    "react",
+    "redux-model",
+    "redux",
+    "model",
+    "typescript",
+    "taro"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "repository": "https://github.com/redux-model/redux-model",
+  "author": "范文华 <531362022@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "sh ../../scripts/build.sh",
+    "prepublishOnly": "yarn run build",
+    "tsc": "../../node_modules/.bin/tsc",
+    "relink": "bash ../../scripts/relink.sh"
+  },
+  "peerDependencies": {
+    "@tarojs/taro": "^3.0.0"
+  },
+  "dependencies": {
+    "@redux-model/core": "9.0.2",
+    "@types/react-redux": "7.1.9",
+    "promise-listen-catch": "1.0.0",
+    "qs": "6.9.4",
+    "react-redux": "7.2.1",
+    "redux": "4.0.5",
+    "tslib": "2.0.3"
+  },
+  "devDependencies": {
+    "@tarojs/taro": "3.0.14",
+    "@types/qs": "6.9.3",
+    "@types/react": "16.9.43",
+    "@types/react-dom": "16.9.8",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "vue": "2.6.12"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "build"
+  },
+  "files": [
+    "lib",
+    "es",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ]
+}
